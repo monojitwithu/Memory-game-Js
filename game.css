@@ -1,0 +1,50 @@
+.grid{
+    position: absolute;
+    right: 150px;
+
+
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 681px;
+    box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.75);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 15%, rgba(0,212,255,1) 88%);
+}
+.cards{
+    width: 223px;
+    border: 2px solid rgb(253, 253, 253);
+    height: 213px;
+}
+h2{
+    font-family: cursive;
+    top: 321px;
+    position: absolute;
+    left: 58px;
+    color: aqua;
+    font-size: 64px;
+}
+h1{
+    font-family: cursive;
+    top: -55px;
+    position: absolute;
+    left: 471px;
+    color: rgb(30, 32, 32);
+    font-size: 64px;
+
+}
+span {
+    font-size: 45px;
+}
+    
