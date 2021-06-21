@@ -6,47 +6,48 @@ document.addEventListener('DOMContentLoaded',()=>{
             img:"./images/1.png"
         },
         {
-            name: 1,
-            img:"./images/1.png"
-        },
-        {
             name: 2,
+            img:"./images/1.png"
+        }, 
+        
+        {
+            name: 4,
             img:"./images/2.png"
         },
         {
-            name: 2,
+            name: 5,
             img:"./images/2.png "
         },
         {
-            name: 3,
+            name: 7,
             img:"./images/3.png"
         },
         {
-            name: 3,
+            name: 8,
             img:"./images/3.png"
         },
         {
-            name: 4,
+            name: 10,
             img:"./images/4.png"
         },
         {
-            name: 4,
+            name: 11,
             img:"./images/4.png"
         },
         {
-            name: 5,
+            name: 13,
             img:"./images/5.png"
         },
         {
-            name: 5,
+            name: 14,
             img:"./images/5.png"
         },
         {
-            name: 6,
+            name: 16,
             img:"./images/6.png"
         },
         {
-            name: 6,
+            name: 17,
             img:"./images/6.png"
         },
     ]
@@ -82,10 +83,17 @@ function checkForMatch(){
     var cards=document.querySelectorAll("img")
     const optionOneID=cardChosenID[0]
     const optTwoID=cardChosenID[1]
-    if(cardChosen[0]===cardChosen[1]){
+    if(cardChosen[0] + 1===cardChosen[1] || cardChosen[0] - 1===cardChosen[1]){
         alert("you found a Match")
         cards[optionOneID].setAttribute('src',"./images/white.png")
         cards[optTwoID].setAttribute('src',"./images/white.png")
+
+        // cards[optionOneID].setAttribute('class',"noCursor")
+        // cards[optTwoID].setAttribute('class',"noCursor")
+        cards[optionOneID].classList.add("noCursor")
+        cards[optTwoID].classList.add("noCursor")
+        
+        
         
         cardswon.push(cardChosen)
     }else{
